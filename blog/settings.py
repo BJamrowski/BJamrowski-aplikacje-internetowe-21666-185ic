@@ -27,7 +27,7 @@ SECRET_KEY = ')*a!i9nehjz@no3iz(so^69jwzzjuod6__xxl3)-!bg&dk%l-#'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+# ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangogirls',
+        'NAME': 'BJamrowski',
         'USER': 'name',
         'PASSWORD': '',
         'HOST': 'localhost',
