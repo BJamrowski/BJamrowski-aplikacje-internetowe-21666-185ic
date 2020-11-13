@@ -3,7 +3,7 @@
 
 Projekt obejmuje stworzenie bloga
 
-Link to bloga opublikowanego na platformie pythonanywhere http://bartoszjamrowski.pythonanywhere.com/
+Link to bloga opublikowanego na platformie pythonanywhere: http://bartoszjamrowski.pythonanywhere.com/
 
 W ten sposób prezentuje się strona glowna bloga
 Widzimy u gory nazwe bloga, kazdy post ma swoj tytul oraz date wstawienia.
