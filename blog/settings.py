@@ -31,13 +31,13 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blogDB',
+    'django.contrib.admin',
 ]
 
 MIDDLEWARE = [
@@ -114,6 +114,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+LOGIN_REDIRECT_URL = 'post_list'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
