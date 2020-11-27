@@ -25,7 +25,7 @@ SECRET_KEY = ')*a!i9nehjz@no3iz(so^69jwzzjuod6__xxl3)-!bg&dk%l-#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['blog.com' , 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blogDB',
     'django.contrib.admin',
+    'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +101,18 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
+    )
+
+
+SOCIAL_AUTH_FACEBOOK_KEY = '138741607670111' # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = 'f936d0fb4fb9e8a78c001d5887f3dd56' # Facebook App Secret
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '1025799646088-8l99ts141smijupdb5m9gkhhrl65eu4i.apps.googleusercontent.com' # Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'wFmZ7SKnIm41T3BsOYMXRaCo' # Google Consumer Secret
 
 
 # Internationalization

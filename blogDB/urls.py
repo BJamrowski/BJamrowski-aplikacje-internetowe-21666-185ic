@@ -1,5 +1,6 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
+from django.conf.urls import url, include
 
 from . import views
 
@@ -31,4 +32,7 @@ urlpatterns = [
     path('reset/done/',
         auth_views.PasswordResetCompleteView.as_view(),
         name='password_reset_complete'),
+
+    #scoial websites login
+    path('social-auth/', include('social_django.urls', namespace='social')),
 ]
