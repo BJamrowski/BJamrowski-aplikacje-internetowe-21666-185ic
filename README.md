@@ -13,5 +13,4 @@ w projektowniu oraz tworzeniu uslug REST API.
 Serializery pozwalaja na przedstawienie zlozonych struktor informacji
 w prostszy i latwiejszy w odczycie sposob.
 
-Ponizej widzimy efekt do pierwszych 4 zadan.
 ![Swagger](./photos/view.png)
