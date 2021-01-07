@@ -8,32 +8,42 @@ w modelu klocz:wartosc, gdzie klucz zawsze jest w formie string.
 Zadania
 
 Zadanie 1
+
 ![1](./photos/1.png)
 
 Zadanie 2
+
 ![2](./photos/2.png)
 
 Zadanie 3
+
 ![3](./photos/3.png)
 Zadanie 3b
+
 ![3b](./photos/3b.png)
 
 Zadanie 4
+
 ![4](./photos/4.png)
 
 Zadanie 5
+
 ![5](./photos/5.png)
 
 Zadanie 6
+
 ![6](./photos/6.png)
 
 Zadanie 7
+
 ![7](./photos/7.png)
 
 Zadanie 8
+
 ![8](./photos/8.png)
 
 Zadanie 9
+
 ![9](./photos/9.png)
 
 
