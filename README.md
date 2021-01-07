@@ -18,6 +18,7 @@ Zadanie 2
 Zadanie 3
 
 ![3](./photos/3.png)
+
 Zadanie 3b
 
 ![3b](./photos/3b.png)
