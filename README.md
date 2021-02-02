@@ -5,12 +5,12 @@ Zadanniem laboratorium bylo stworzenie aplikacji do obslugi czatu. Do budowy cza
 Socket.io to biblioteka JS, ktoa pozwala na dwukierunkowa komunikacje miedzy klientem a serwerem
 
 Ponizej widzimy podglad dzialania aplikacji.
-![Incomplete](./photos/1.png)
+![Incomplete](./images/1.png)
 
 Drugim zadaniem bylo stworzenie 2 aplikacji wykorzystujacych webworkery. 
 Pierwsza aplikacja sprawdza czy nasza przegladarka obsluguje webworkery.
 
-![](./photos/2.png)
+![](./images/2.png)
 
 Druga aplikacja oblicza ciag fibbonaciego. Niestety w tej czesci wystapil problem ze strony przegladarki,
 ktorego nie bylem w stanie rozwiazac.
