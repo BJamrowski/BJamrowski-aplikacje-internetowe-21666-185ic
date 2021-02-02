@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript">
+    function worker() {
+      if (typeof (Worker) !== "undefined") {
+        document.getElementById("supported").innerHTML = "Ta przeglądarka wspiera webworker";
+      }
+      else {
+        document.getElementById("unsupported").innerHTML = "Ta przeglądarka nie wspiera webworker";
+      }
+    } 
+  </script>
+</head>
+
+<body>
+  <h2>Wspieranie webworker</h2>
+  <div id="supported"></div>
+  <div id="unsupported"></div>
+  <button onclick="worker();">Dowiedz sie</button>
+</body>
+
+</html>

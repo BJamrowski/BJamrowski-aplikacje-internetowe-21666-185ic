@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fibonacci</title>
+</head>
+
+<body>
+
+  <form>
+    <div>
+      <input type="number" id="number">
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+
+  <p id="result"></p>
+
+  <script language="javascript">
+    var form = document.querySelector('form');
+    var input = document.querySelector('input[type="number"]');
+    var result = document.querySelector('p#result');
+    var worker = new Worker('fibonacci.js');
+
+    worker.onmessage = function (event) {
+      result.textContent = event.data;
+      console.log('Got: ' + event.data + '\n');
+    };
+
+    worker.onerror = function (error) {
+      console.log('Worker error: ' + error.message + '\n');
+      throw error;
+    };
+
+    form.onsubmit = function (e) {
+      e.preventDefault();
+      worker.postMessage(input.value);
+      input.value = '';
+    }
+  </script>
+</body>
+
+</html>
